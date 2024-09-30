@@ -26,16 +26,16 @@ This repository contains a simple Flask application that is containerized using 
 
 3. Replace your-dockerhub-username with your actual Docker Hub username
 
-### Steps to Edit Jenkins Configuration
+### Steps to Edit Jenkinsfile
 
-1. **Locate the Jenkins Configuration File**
-   - Find the Jenkins configuration file on your server or local machine.
+1. **Locate the Jenkinsfile**
+   - Find the Jenkinsfile
 
-2. **Edit the Configuration File**
-   - Open the configuration file in a text editor.
+2. **Edit the Jenkinsfile**
+   - Open the Jenkinsfile in a text editor or on Github to edit
 
 3. **Update JIRA Settings**
-   - Locate lines 6 and 7 in the configuration file.
+   - Locate lines 5 and 6 in the Jenkinsfile.
    - Replace `JIRA_SITE` with your JIRA site name. For example, if your site name is `https://sit-team-vr03pn0q.atlassian.net/`, use `sit-team-vr03pn0q`.
    - Replace `JIRA_PROJECT_KEY` with the project key you noted earlier.
 
@@ -43,3 +43,12 @@ This repository contains a simple Flask application that is containerized using 
    # Example:
    JIRA_SITE = "sit-team-vr03pn0q"
    JIRA_PROJECT_KEY = "YOUR_PROJECT_KEY"
+   '''
+
+4. **Update Github Link**
+   - Locate line 13.
+   - Replace `url` with your Github repo link (e.g. https://github.com/{github-username}/Flask_Application_Kurbenetes.git
+
+   ```plaintext
+   # Example:
+   git branch: 'main', url: 'https://github.com/{github-username}/Flask_Application_Kurbenetes.git'
